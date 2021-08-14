@@ -1,7 +1,5 @@
 package com.company.utilities;
 
-import com.sun.org.apache.bcel.internal.generic.Select;
-
 import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
@@ -10,12 +8,12 @@ import org.openqa.selenium.support.ui.*;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.NoSuchElementException;
 import java.util.Random;
 import java.util.function.Function;
 
-public class BrowserUtils {
+import static org.junit.Assert.assertTrue;
 
+public class BrowserUtils {
 
     /**
      This method accepts String expected title
@@ -121,7 +119,7 @@ public class BrowserUtils {
         FluentWait<WebDriver> wait = new FluentWait<WebDriver>(Driver.getDriver())
                 .withTimeout(Duration.ofSeconds(timeinsec))
                 .pollingEvery(Duration.ofMillis(500))
-                .ignoring(NoSuchElementException.class);
+                .ignoring(org.openqa.selenium.NoSuchElementException.class);
         WebElement element = wait.until(new Function<WebDriver, WebElement>() {
             public WebElement apply(WebDriver driver) {
                 return webElement;
@@ -139,7 +137,7 @@ public class BrowserUtils {
     public static void verifyElementDisplayed(By by) {
         try {
             assertTrue("Element not visible: " + by, Driver.getDriver().findElement(by).isDisplayed());
-        } catch (NoSuchElementException e) {
+        } catch (org.openqa.selenium.NoSuchElementException e) {
             Assert.fail("Element not found: " + by);
 
         }
