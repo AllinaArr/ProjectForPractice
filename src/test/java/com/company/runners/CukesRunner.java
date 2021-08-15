@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         plugin = "html:target/cucumber-report.html",
         features = "src/test/resources/features",
         glue = "com/company/step_definitions",
-        dryRun = false,
+        dryRun = true,
         tags = "@smoke"
 )
 public class CukesRunner {
