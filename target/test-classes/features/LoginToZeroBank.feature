@@ -5,7 +5,7 @@ Feature: ZeroBank login
   and see options :
   (Savings, Checking, Savings, Loan, Credit Card, Brokerage)
 
-  @wip
+  @smoke
   Scenario: Checking the account activity page features of ZeroBank Application
   When The user navigates to the login page
   Then user logs in with the user "username" and the password "password"
