@@ -15,6 +15,10 @@ public class LoginPageZeroBank {
 
     @FindBy (id = "user_password")
     public WebElement passwordButtom;
+    @FindBy (id = "user_login")
+    public WebElement login;
+    @FindBy (id = "user_login")
+    public WebElement log;
 
 
     @FindBy (id="primary-button")
