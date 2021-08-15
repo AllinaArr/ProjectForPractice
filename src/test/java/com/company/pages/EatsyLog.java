@@ -17,4 +17,8 @@ public class EatsyLog {
     @FindBy(xpath = "//button[@value='Search']")
     public WebElement searchButton;
 
+    //comt
+    @FindBy(xpath = "//button[@value='Search']")
+    public WebElement searchButton666;
+
 }
