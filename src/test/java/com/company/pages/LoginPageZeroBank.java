@@ -25,5 +25,9 @@ public class LoginPageZeroBank {
     @FindBy (id="account_activity_link")
     public WebElement accountActivityLink;
 
+    @FindBy (id ="aa_accountId")
+    public WebElement accountsDropDown;
 
+    @FindBy(className = "well")
+    public WebElement noResultAnswer;
 }
