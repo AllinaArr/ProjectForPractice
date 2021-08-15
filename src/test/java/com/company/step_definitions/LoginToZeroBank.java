@@ -81,5 +81,7 @@ public class LoginToZeroBank {
         String actualText = loginPageZeroBank.noResultAnswer.getText();
 
         Assert.assertEquals(actualText,expectedText,"No results.");
+
+        //added
     }
 }
