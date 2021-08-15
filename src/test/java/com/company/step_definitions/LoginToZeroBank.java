@@ -57,7 +57,6 @@ public class LoginToZeroBank {
 
         List<String> expectedOptions = new ArrayList<>(Arrays.asList("Savings", "Checking", "Savings", "Loan",
                 "Credit Card", "Brokerage"));
-
         List<WebElement> actualOptions = dropDown.getOptions();
 
         List<String> actualOptionsTexts = new ArrayList<>();
