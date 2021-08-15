@@ -16,8 +16,6 @@ public class LoginPageZeroBank {
     @FindBy (id = "user_password")
     public WebElement passwordButtom;
 
-    @FindBy (name = "submit")
-    public WebElement signInButtom;
 
     @FindBy (id="primary-button")
     public WebElement securyButtom;
@@ -25,9 +23,8 @@ public class LoginPageZeroBank {
     @FindBy (id="account_activity_link")
     public WebElement accountActivityLink;
 
-    @FindBy (id ="aa_accountId")
-    public WebElement accountsDropDown;
-
     @FindBy(className = "well")
     public WebElement noResultAnswer;
+    @FindBy (name = "submit")
+    public WebElement signInButtom;
 }
